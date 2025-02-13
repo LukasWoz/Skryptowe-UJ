@@ -1,0 +1,15 @@
+.App {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-bar ul li {
+    display: inline-block;
+  }
+  
