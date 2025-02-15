@@ -1,0 +1,136 @@
+[{
+  "_id": {
+    "$oid": "67b084a79f6f6dc397b3da13"
+  },
+  "name": "Piłka",
+  "price": 49.99,
+  "category": {
+    "$oid": "67b083999f6f6dc397b3da0f"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T12:12:23.378Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:12:23.378Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b085639f6f6dc397b3da2f"
+  },
+  "name": "Telewizor",
+  "price": 200,
+  "category": {
+    "$oid": "67b085329f6f6dc397b3da2a"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T12:15:31.094Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:15:31.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b085789f6f6dc397b3da34"
+  },
+  "name": "Konsola",
+  "price": 150,
+  "category": {
+    "$oid": "67b085329f6f6dc397b3da2a"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T12:15:52.120Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:15:52.120Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b085839f6f6dc397b3da36"
+  },
+  "name": "Słuchawki",
+  "price": 20,
+  "category": {
+    "$oid": "67b085329f6f6dc397b3da2a"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T12:16:03.996Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:16:03.996Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b085a59f6f6dc397b3da38"
+  },
+  "name": "Lalka Barbie",
+  "price": 60,
+  "category": {
+    "$oid": "67b084f59f6f6dc397b3da18"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T12:16:37.953Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:16:37.953Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b085cc9f6f6dc397b3da3d"
+  },
+  "name": "Lego",
+  "price": 100,
+  "category": {
+    "$oid": "67b084f59f6f6dc397b3da18"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T12:17:16.740Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:17:16.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b085e39f6f6dc397b3da3f"
+  },
+  "name": "Skakanka",
+  "price": 11,
+  "category": {
+    "$oid": "67b083999f6f6dc397b3da0f"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T12:17:39.853Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:17:39.853Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b085f29f6f6dc397b3da41"
+  },
+  "name": "Bieżnia",
+  "price": 450,
+  "category": {
+    "$oid": "67b083999f6f6dc397b3da0f"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T12:17:54.967Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:17:54.967Z"
+  },
+  "__v": 0
+}]

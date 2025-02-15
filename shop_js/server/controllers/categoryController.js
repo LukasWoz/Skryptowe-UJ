@@ -1,25 +1,28 @@
 const Category = require('../models/Category');
 
-// Utworzenie nowej kategorii
 exports.createCategory = async (req, res) => {
   try {
     const { name } = req.body;
-    const category = new Category({ name });
-    await category.save();
-    res.status(201).json(category);
+    if (!name) {
+      return res.status(400).json({ message: 'Nazwa kategorii jest wymagana.' });
+    }
+
+    const newCategory = new Category({ name });
+    await newCategory.save();
+
+    res.status(201).json(newCategory);
   } catch (error) {
-    console.error('createCategory error:', error);
-    res.status(500).json({ message: 'Błąd podczas tworzenia kategorii' });
+    console.error('Błąd tworzenia kategorii:', error);
+    res.status(500).json({ message: 'Wewnętrzny błąd serwera.' });
   }
 };
 
-// Pobranie wszystkich kategorii
 exports.getCategories = async (req, res) => {
   try {
     const categories = await Category.find();
-    res.json(categories);
+    res.status(200).json(categories);
   } catch (error) {
-    console.error('getCategories error:', error);
-    res.status(500).json({ message: 'Błąd podczas pobierania kategorii' });
+    console.error('Błąd pobierania kategorii:', error);
+    res.status(500).json({ message: 'Wewnętrzny błąd serwera.' });
   }
 };

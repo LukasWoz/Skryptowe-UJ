@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "67b083999f6f6dc397b3da0f"
+  },
+  "name": "Sport",
+  "createdAt": {
+    "$date": "2025-02-15T12:07:53.790Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:07:53.790Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b084f59f6f6dc397b3da18"
+  },
+  "name": "Zabawki",
+  "createdAt": {
+    "$date": "2025-02-15T12:13:41.657Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:13:41.657Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b085329f6f6dc397b3da2a"
+  },
+  "name": "Elektronika",
+  "createdAt": {
+    "$date": "2025-02-15T12:14:42.497Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T12:14:42.497Z"
+  },
+  "__v": 0
+}]

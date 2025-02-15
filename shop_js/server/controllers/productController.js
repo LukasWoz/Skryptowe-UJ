@@ -1,6 +1,5 @@
 const Product = require('../models/Product');
 
-// Utworzenie nowego produktu
 exports.createProduct = async (req, res) => {
   try {
     const { name, price, category } = req.body;
@@ -13,7 +12,6 @@ exports.createProduct = async (req, res) => {
   }
 };
 
-// Pobranie wszystkich produktów
 exports.getProducts = async (req, res) => {
   try {
     const products = await Product.find().populate('category');

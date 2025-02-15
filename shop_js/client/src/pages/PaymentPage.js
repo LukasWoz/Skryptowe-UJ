@@ -1,21 +1,29 @@
 import React, { useState } from 'react';
 
-function PaymentPage() {
+function PaymentPage({ cartItems, clearCart }) {
   const [isPaid, setIsPaid] = useState(false);
 
+  const totalPrice = cartItems.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  );
+
   const handlePayment = () => {
-    // Symulacja płatności
     alert('Płatność przyjęta!');
     setIsPaid(true);
+    clearCart();
   };
 
   return (
-    <div>
+    <div className="payment-section">
       <h1>Strona płatności</h1>
       {isPaid ? (
         <p>Płatność powiodła się. Dziękujemy za zakupy!</p>
       ) : (
-        <button onClick={handlePayment}>Zapłać</button>
+        <>
+          <p>Do zapłaty: {totalPrice.toFixed(2)} zł</p>
+          <button onClick={handlePayment}>Zapłać</button>
+        </>
       )}
     </div>
   );
