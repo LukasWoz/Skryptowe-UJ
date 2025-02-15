@@ -19,7 +19,8 @@
 
 **2. Rezultat działania**
 
-[Obejrzyj wideo](działanie_programu\Sklep_react.mp4)
+[Obejrzyj wideo](działanie_programu/Sklep_react.mp4)
 
-![Strona_główna](działanie_programu\image2.png)
-![Koszyk](działanie_programu\image.png)
+![Strona_glowna](działanie_programu/Image2.png)
+
+![Koszyk](działanie_programu/image.png)
