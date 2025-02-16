@@ -1,0 +1,30 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bigdecimal (3.1.9)
+    csv (3.3.2)
+    httparty (0.22.0)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    mini_mime (1.1.5)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
+    nokogiri (1.18.2-x64-mingw-ucrt)
+      racc (~> 1.4)
+    racc (1.8.1)
+    sequel (5.89.0)
+      bigdecimal
+    sqlite3 (2.5.0-x64-mingw-ucrt)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  httparty
+  nokogiri
+  sequel
+  sqlite3
+
+BUNDLED WITH
+   2.5.22
