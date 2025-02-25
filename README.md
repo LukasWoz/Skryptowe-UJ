@@ -17,3 +17,5 @@
 **2. Rezultat działania**
 
 [Obejrzyj wideo](Tetris_rozgrywka.mp4)
+    
+* Na filmie audio jest opóźnione względem wideo - jest to rezultat eksportu wideo. Efekty dźwiękowe w grze działają prawidłowo 
