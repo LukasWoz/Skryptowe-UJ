@@ -1,0 +1,50 @@
+[
+    {
+        "preparation_time": 0.3,
+        "delivery_time": 0.7,
+        "price": 15,
+        "item": "Burger",
+        "total_price": 15.0,
+        "pickup_address": "123 Restaurant Street, City Center"
+    },
+    {
+        "preparation_time": 0.5,
+        "delivery_time": 1,
+        "price": 25,
+        "item": "Lasagne",
+        "total_price": 25.0,
+        "pickup_address": "123 Restaurant Street, City Center"
+    },
+    {
+        "preparation_time": 0.15,
+        "delivery_time": 0.3,
+        "price": 12,
+        "item": "Tiramisu",
+        "total_price": 12.0,
+        "pickup_address": "123 Restaurant Street, City Center"
+    },
+    {
+        "preparation_time": 1,
+        "delivery_time": 1.5,
+        "price": 30,
+        "item": "Spaghetti",
+        "total_price": 30.0,
+        "pickup_address": "123 Restaurant Street, City Center"
+    },
+    {
+        "preparation_time": 0.3,
+        "delivery_time": 0.7,
+        "price": 15,
+        "item": "Burger",
+        "total_price": 15.0,
+        "pickup_address": "123 Restaurant Street, City Center"
+    },
+    {
+        "preparation_time": 0.5,
+        "delivery_time": 1,
+        "price": 25,
+        "item": "Lasagne",
+        "total_price": 25.0,
+        "pickup_address": "123 Restaurant Street, City Center"
+    }
+]

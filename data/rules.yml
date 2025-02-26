@@ -1,0 +1,42 @@
+version: "3.1"
+
+rules:
+  - rule: Greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Start order form
+    steps:
+      - intent: place_order
+      - action: order_form
+      - active_loop: order_form
+
+  - rule: After form completes
+    condition:
+      - active_loop: order_form
+    steps:
+      - action: order_form
+      - active_loop: null
+      - action: action_summary
+      - action: utter_ask_order_confirmation
+
+  - rule: Confirm
+    steps:
+      - intent: confirm_order
+      - action: action_confirm_order
+
+  - rule: Deny
+    steps:
+      - intent: deny
+      - action: action_cancel_order
+
+  - rule: Ask menu
+    steps:
+      - intent: ask_menu
+      - action: action_show_menu
+
+  - rule: Ask opening hours
+    steps:
+      - intent: ask_opening_hours
+      - action: action_check_opening_hours

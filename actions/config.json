@@ -1,0 +1,22 @@
+{
+    "opening_hours": {
+      "Monday": {"open": 8, "close": 20},
+      "Tuesday": {"open": 8, "close": 20},
+      "Wednesday": {"open": 8, "close": 20},
+      "Thursday": {"open": 8, "close": 20},
+      "Friday": {"open": 8, "close": 20},
+      "Saturday": {"open": 10, "close": 16},
+      "Sunday": {"open": 0, "close": 0}
+    },
+    "menu": {
+      "Spaghetti": {"preparation_time": 1, "delivery_time": 1.5, "price": 30},
+      "Sandwich": {"preparation_time": 1.5, "delivery_time": 2, "price": 40},
+      "Pizza ": {"preparation_time": 0.2, "delivery_time": 0.5, "price": 10},
+      "Burger": {"preparation_time": 0.3, "delivery_time": 0.7, "price": 15},
+      "Lasagne": {"preparation_time": 0.5, "delivery_time": 1, "price": 25},
+      "Tiramisu": {"preparation_time": 0.15, "delivery_time": 0.3, "price": 12}
+    },
+    "delivery_cost": 10,
+    "pickup_address": "123 Restaurant Street, City Center"
+  }
+  

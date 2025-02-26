@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+  - story: user orders then confirms
+    steps:
+      - intent: place_order
+      - action: order_form
+      - active_loop: order_form
+      - active_loop: null
+      - action: action_summary
+      - action: utter_ask_order_confirmation
+      - intent: confirm_order
+      - action: action_confirm_order
+
+  - story: user orders then cancels
+    steps:
+      - intent: place_order
+      - action: order_form
+      - active_loop: order_form
+      - intent: cancel
+      - action: action_cancel_order
+
+  - story: user denies after summary
+    steps:
+      - intent: place_order
+      - action: order_form
+      - active_loop: order_form
+      - active_loop: null
+      - action: action_summary
+      - action: utter_ask_order_confirmation
+      - intent: deny
+      - action: action_cancel_order

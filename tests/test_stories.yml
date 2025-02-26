@@ -1,0 +1,166 @@
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      not really
+    intent: deny
+  - action: utter_goodbye
+
+- story: sad path 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      very terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      no
+    intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: order delivery (happy path)
+  steps:
+    - user: |
+        Chciałbym zamówić pizzę z dostawą na ul. Marszałkowska 12
+      intent: place_order
+      entities:
+        - item: "pizza"
+        - delivery_preference: "delivery"
+        - address: "ul. Marszałkowska 12"
+    - action: order_form
+    - active_loop: order_form
+
+    - active_loop: null
+    - action: action_summary
+    - action: utter_ask_order_confirmation
+
+    - user: |
+        Tak
+      intent: confirm_order
+    - action: action_confirm_order
+
+- story: order pickup (happy path)
+  steps:
+    - user: |
+        Chcę lasagne z odbiorem na miejscu
+      intent: place_order
+      entities:
+        - item: "lasagne"
+        - delivery_preference: "pickup"
+    - action: order_form
+    - active_loop: order_form
+
+    - active_loop: null
+    - action: action_summary
+    - action: utter_ask_order_confirmation
+
+    - user: |
+        Tak
+      intent: confirm_order
+    - action: action_confirm_order
+
+- story: order delivery but user denies
+  steps:
+    - user: |
+        Chciałbym zamówić burgera z dostawą na ul. Zbigniewa 40
+      intent: place_order
+      entities:
+        - item: "burger"
+        - delivery_preference: "delivery"
+        - address: "ul. Zbigniewa 40"
+    - action: order_form
+    - active_loop: order_form
+
+    - active_loop: null
+    - action: action_summary
+    - action: utter_ask_order_confirmation
+
+    - user: |
+        Nie
+      intent: deny
+    - action: action_handle_disagreement
+
+- story: cancel mid-form
+  steps:
+    - user: |
+        Poproszę tiramisu z dostawą
+      intent: place_order
+      entities:
+        - item: "tiramisu"
+        - delivery_preference: "delivery"
+    - action: order_form
+    - active_loop: order_form
+    
+    - user: |
+        Anuluj zamówienie
+      intent: cancel
+    - action: action_cancel_order

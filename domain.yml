@@ -1,0 +1,89 @@
+version: "3.1"
+
+intents:
+  - greet
+  - place_order
+  - confirm_order
+  - deny
+  - cancel
+  - ask_menu
+  - ask_opening_hours
+
+entities:
+  - item
+  - delivery_preference
+  - day
+  - preparation_time
+  - total_price
+
+slots:
+  item:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: item
+
+  delivery_preference:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: delivery_preference
+
+  address:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+    - text: "Cześć! Jak mogę Ci pomóc?"
+
+  utter_goodbye:
+    - text: "Dziękujemy za kontakt! Miłego dnia!"
+
+  utter_ask_order_confirmation:
+    - text: "Czy wszystko się zgadza?"
+
+  utter_ask_address:
+    - text: "Jaki jest adres dostawy?"
+    - text: "Gdzie dostarczyć zamówienie?"
+
+  utter_ask_delivery_preference:
+    - text: "Czy preferujesz odbiór, czy dostawę?"
+
+  utter_ask_item:
+    - text: "Co chcesz zamówić?"
+
+  utter_summary:
+    - text: "Zamawiasz: {item}.\nSposób: {delivery_preference}.\nAdres: ."
+
+  utter_confirm_order_delivery:
+    - text: "Twoje zamówienie zostało przyjęte! Dostawa o {preparation_time}."
+  utter_confirm_order_pickup:
+    - text: "Twoje zamówienie zostało przyjęte! Odbiór o {preparation_time}."
+
+  utter_cancel_order:
+    - text: "Zamówienie zostało anulowane."
+
+  utter_handle_disagreement:
+    - text: "Zamówienie zosatło anulowane."
+
+  utter_incomplete_order:
+    - text: "Brakuje danych do zamówienia. Podaj proszę, czy dostawa czy odbiór?"
+  utter_item_not_found:
+    - text: "Przykro mi, nie mamy {item} w menu."
+
+forms:
+  order_form:
+    required_slots:
+      - item
+      - delivery_preference
+      - address
+
+actions:
+  - validate_order_form
+  - action_confirm_order
+  - action_cancel_order
+  - action_show_menu
+  - action_check_opening_hours
+  - action_summary

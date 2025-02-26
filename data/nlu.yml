@@ -1,0 +1,59 @@
+nlu:
+  - intent: greet
+    examples: |
+      - cześć
+      - witam
+      - hej
+
+  - intent: place_order
+    examples: |
+      - chcę zamówić [pizzę](item)
+      - poproszę [burger](item) z [dostawą](delivery_preference)
+      - zamawiam [lasagne](item)
+      - chcę [tiramisu](item) z [dostawą](delivery_preference) na ul. Jana Pawła 10
+      - chcę [hot-dog](item) z [dostawą](delivery_preference)
+      - chcę [pizza](item)
+      - poproszę [tiramisu](item) na ul. Warszawska 12
+
+  - intent: confirm_order
+    examples: |
+      - tak
+      - tak, zgadza się
+      - potwierdzam
+
+  - intent: deny
+    examples: |
+      - nie
+      - nie zgadza się
+      - rezygnuję
+      - nie chcę
+
+  - intent: cancel
+    examples: |
+      - anuluj
+      - anulowac
+      - nie chcę już zamawiać
+      - rezygnuję z zamówienia
+
+  - intent: ask_menu
+    examples: |
+      - co macie w menu
+      - pokaż menu
+      - co mogę zamówić
+
+  - intent: ask_opening_hours
+    examples: |
+      - jakie są godziny otwarcia
+      - kiedy jesteście otwarci
+      - czy jesteście otwarci w [sobotę](day)
+
+  # Ewentualne synonimy, jeżeli chcesz
+  - synonym: delivery
+    examples: |
+      - dostawa
+      - dostawę
+
+  - synonym: pickup
+    examples: |
+      - odbiór
+      - na miejscu
