@@ -1,33 +1,17 @@
 # Skryptowe-UJ
 
-## Zadanie1: TicTacToe
-  
-
-**1. Opis projektu**
-* **Nazwa:** Kółko i Krzyżyk w Bash
-* **Język:** Bash
-* Gra umożliwia:
-
-    * działa w trybie gry turowej [3.0] 
-
-    * pozwala na zapis i odtwarzanie przerwanej gry (save game) [4.0]
-
-    * pozwala na grę z komputerem [5.0]
-
-**2. Sposób działania**
-
-## Zadanie2: Python-Chatbot
-  
-
-**1. Opis projektu**
-* **Nazwa:** Python. Czatbot
-* **Język:** Python
-* Program umożliwia:
-
-    * [3.0] 
-    * [3.5]
-    * [4.0]
-    * [4.5]
-    * [5.0]
-
-**2. Sposób działania**
+## Zadanie1: 
+[Bash. Kółko i krzyżyk](https://github.com/LukasWoz/Skryptowe-UJ/tree/bash)
+* Wymagania na ocenę: [5.0] 
+## Zadanie2: 
+[Python. Czatbot](https://github.com/LukasWoz/Skryptowe-UJ/tree/python)
+* Wymagania na ocenę: [3.5] 
+## Zadanie3:
+[JS. Sklep w ReactJS + NodeJs](https://github.com/LukasWoz/Skryptowe-UJ/tree/JS)
+* Wymagania na ocenę: [5.0] 
+## Zadanie4: 
+[Ruby. Crawler](https://github.com/LukasWoz/Skryptowe-UJ/tree/Ruby)
+* Wymagania na ocenę: [5.0] 
+## Zadanie5:
+[Lua. Tetris](https://github.com/LukasWoz/Skryptowe-UJ/tree/Lua)
+* Wymagania na ocenę: [4.5] 
