@@ -12,4 +12,5 @@
 
     * pozwala na grę z komputerem [5.0]
 
-**2. Sposób działania**
+**2. Rezultat działania **
+* [Obejrzyj wideo](bash_rezultat.mp4)
